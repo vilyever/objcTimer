@@ -32,17 +32,17 @@ dispatch_source_t VDCreateDispatchTimer(NSTimeInterval interval, dispatch_queue_
 @implementation VDGCDTimer
 
 #pragma mark Public Method
-+ (instancetype)timerWithInterval:(NSTimeInterval)interval repeats:(BOOL)repeats fireOnMainThread:(BOOL)isFireOnMainThread actionBlock:(void(^)(VDGCDTimer *timer))actionBlock {
-    return [[self alloc] initWithInterval:interval repeats:repeats fireOnMainThread:isFireOnMainThread actionBlock:actionBlock];
++ (instancetype)timerWithInterval:(NSTimeInterval)interval repeats:(BOOL)repeats fireOnMainThread:(BOOL)isFireOnMainThread action:(void(^)(VDGCDTimer *timer))action {
+    return [[self alloc] initWithInterval:interval repeats:repeats fireOnMainThread:isFireOnMainThread action:action];
 }
 
-- (instancetype)initWithInterval:(NSTimeInterval)interval repeats:(BOOL)repeats fireOnMainThread:(BOOL)isFireOnMainThread actionBlock:(void(^)(VDGCDTimer *timer))actionBlock {
+- (instancetype)initWithInterval:(NSTimeInterval)interval repeats:(BOOL)repeats fireOnMainThread:(BOOL)isFireOnMainThread action:(void(^)(VDGCDTimer *timer))action {
     self = [super init];
     
     _interval = interval;
     _repeats = repeats;
     _isFireOnMainThread = isFireOnMainThread;
-    _actionBlock = actionBlock;
+    _action = action;
     
     _firedCount = 0;
     
@@ -50,8 +50,8 @@ dispatch_source_t VDCreateDispatchTimer(NSTimeInterval interval, dispatch_queue_
 }
 
 - (void)fire {
-    if (self.actionBlock) {
-        self.actionBlock(self);
+    if (self.action) {
+        self.action(self);
     }
 }
 
@@ -60,7 +60,7 @@ dispatch_source_t VDCreateDispatchTimer(NSTimeInterval interval, dispatch_queue_
         [self fire];
     }
     else {
-        if (self.actionBlock) {
+        if (self.action) {
             VDWeakifySelf;
             dispatch_async(dispatch_get_main_queue(), ^{
                 VDStrongifySelf;
@@ -108,9 +108,7 @@ dispatch_source_t VDCreateDispatchTimer(NSTimeInterval interval, dispatch_queue_
 #pragma mark Overrides
 - (instancetype)init {
     self = [super init];
-    
-    [self internalInitVDGCDTimer];
-    
+        
     return self;
 }
 
@@ -123,8 +121,5 @@ dispatch_source_t VDCreateDispatchTimer(NSTimeInterval interval, dispatch_queue_
 
 
 #pragma mark Private Method
-- (void)internalInitVDGCDTimer {
-    
-}
 
 @end

@@ -32,6 +32,6 @@ Pod::Spec.new do |s|
   s.public_header_files = 'objcTimer/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
 
-#  s.dependency 'objcView'
+  s.dependency 'objcBlock'
 
 end
