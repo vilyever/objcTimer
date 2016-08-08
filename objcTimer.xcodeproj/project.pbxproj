@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE640A1B1D58221900652BAC /* objcTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = FE640A1A1D58221900652BAC /* objcTimer.h */; };
+		FE640A1B1D58221900652BAC /* objcTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = FE640A1A1D58221900652BAC /* objcTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE640A221D58221900652BAC /* objcTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE640A171D58221900652BAC /* objcTimer.framework */; };
 		FE640A271D58221900652BAC /* objcTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE640A261D58221900652BAC /* objcTimerTests.m */; };
+		FE640A341D58223700652BAC /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = FE640A311D58223700652BAC /* Cartfile */; };
+		FE640A351D58223700652BAC /* objcTimer.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FE640A321D58223700652BAC /* objcTimer.podspec */; };
+		FE640A391D58225D00652BAC /* VDGCDTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = FE640A371D58225D00652BAC /* VDGCDTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE640A3A1D58225D00652BAC /* VDGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = FE640A381D58225D00652BAC /* VDGCDTimer.m */; };
+		FE640A3C1D58229F00652BAC /* objcBlock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE640A3B1D58229F00652BAC /* objcBlock.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,12 @@
 		FE640A211D58221900652BAC /* objcTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = objcTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE640A261D58221900652BAC /* objcTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objcTimerTests.m; sourceTree = "<group>"; };
 		FE640A281D58221900652BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE640A311D58223700652BAC /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		FE640A321D58223700652BAC /* objcTimer.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = objcTimer.podspec; sourceTree = "<group>"; };
+		FE640A331D58223700652BAC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FE640A371D58225D00652BAC /* VDGCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDGCDTimer.h; sourceTree = "<group>"; };
+		FE640A381D58225D00652BAC /* VDGCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDGCDTimer.m; sourceTree = "<group>"; };
+		FE640A3B1D58229F00652BAC /* objcBlock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = objcBlock.framework; path = Carthage/Build/iOS/objcBlock.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE640A3C1D58229F00652BAC /* objcBlock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,9 +65,13 @@
 		FE640A0D1D58221900652BAC = {
 			isa = PBXGroup;
 			children = (
+				FE640A3B1D58229F00652BAC /* objcBlock.framework */,
 				FE640A191D58221900652BAC /* objcTimer */,
 				FE640A251D58221900652BAC /* objcTimerTests */,
 				FE640A181D58221900652BAC /* Products */,
+				FE640A311D58223700652BAC /* Cartfile */,
+				FE640A321D58223700652BAC /* objcTimer.podspec */,
+				FE640A331D58223700652BAC /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +89,8 @@
 			children = (
 				FE640A1A1D58221900652BAC /* objcTimer.h */,
 				FE640A1C1D58221900652BAC /* Info.plist */,
+				FE640A371D58225D00652BAC /* VDGCDTimer.h */,
+				FE640A381D58225D00652BAC /* VDGCDTimer.m */,
 			);
 			path = objcTimer;
 			sourceTree = "<group>";
@@ -94,6 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE640A1B1D58221900652BAC /* objcTimer.h in Headers */,
+				FE640A391D58225D00652BAC /* VDGCDTimer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +197,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE640A351D58223700652BAC /* objcTimer.podspec in Resources */,
+				FE640A341D58223700652BAC /* Cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE640A3A1D58225D00652BAC /* VDGCDTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +336,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = objcTimer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -330,6 +356,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = objcTimer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
