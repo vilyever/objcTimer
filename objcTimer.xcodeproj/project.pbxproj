@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE640A1B1D58221900652BAC /* objcTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = FE640A1A1D58221900652BAC /* objcTimer.h */; };
+		FE640A221D58221900652BAC /* objcTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE640A171D58221900652BAC /* objcTimer.framework */; };
+		FE640A271D58221900652BAC /* objcTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE640A261D58221900652BAC /* objcTimerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE640A231D58221900652BAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE640A0E1D58221900652BAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE640A161D58221900652BAC;
+			remoteInfo = objcTimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FE640A171D58221900652BAC /* objcTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = objcTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE640A1A1D58221900652BAC /* objcTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = objcTimer.h; sourceTree = "<group>"; };
+		FE640A1C1D58221900652BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE640A211D58221900652BAC /* objcTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = objcTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE640A261D58221900652BAC /* objcTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objcTimerTests.m; sourceTree = "<group>"; };
+		FE640A281D58221900652BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE640A131D58221900652BAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE640A1E1D58221900652BAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE640A221D58221900652BAC /* objcTimer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE640A0D1D58221900652BAC = {
+			isa = PBXGroup;
+			children = (
+				FE640A191D58221900652BAC /* objcTimer */,
+				FE640A251D58221900652BAC /* objcTimerTests */,
+				FE640A181D58221900652BAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE640A181D58221900652BAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE640A171D58221900652BAC /* objcTimer.framework */,
+				FE640A211D58221900652BAC /* objcTimerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE640A191D58221900652BAC /* objcTimer */ = {
+			isa = PBXGroup;
+			children = (
+				FE640A1A1D58221900652BAC /* objcTimer.h */,
+				FE640A1C1D58221900652BAC /* Info.plist */,
+			);
+			path = objcTimer;
+			sourceTree = "<group>";
+		};
+		FE640A251D58221900652BAC /* objcTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE640A261D58221900652BAC /* objcTimerTests.m */,
+				FE640A281D58221900652BAC /* Info.plist */,
+			);
+			path = objcTimerTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FE640A141D58221900652BAC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE640A1B1D58221900652BAC /* objcTimer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FE640A161D58221900652BAC /* objcTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE640A2B1D58221900652BAC /* Build configuration list for PBXNativeTarget "objcTimer" */;
+			buildPhases = (
+				FE640A121D58221900652BAC /* Sources */,
+				FE640A131D58221900652BAC /* Frameworks */,
+				FE640A141D58221900652BAC /* Headers */,
+				FE640A151D58221900652BAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = objcTimer;
+			productName = objcTimer;
+			productReference = FE640A171D58221900652BAC /* objcTimer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FE640A201D58221900652BAC /* objcTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE640A2E1D58221900652BAC /* Build configuration list for PBXNativeTarget "objcTimerTests" */;
+			buildPhases = (
+				FE640A1D1D58221900652BAC /* Sources */,
+				FE640A1E1D58221900652BAC /* Frameworks */,
+				FE640A1F1D58221900652BAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE640A241D58221900652BAC /* PBXTargetDependency */,
+			);
+			name = objcTimerTests;
+			productName = objcTimerTests;
+			productReference = FE640A211D58221900652BAC /* objcTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE640A0E1D58221900652BAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = vilyever;
+				TargetAttributes = {
+					FE640A161D58221900652BAC = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2594YAARKH;
+					};
+					FE640A201D58221900652BAC = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2594YAARKH;
+					};
+				};
+			};
+			buildConfigurationList = FE640A111D58221900652BAC /* Build configuration list for PBXProject "objcTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FE640A0D1D58221900652BAC;
+			productRefGroup = FE640A181D58221900652BAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE640A161D58221900652BAC /* objcTimer */,
+				FE640A201D58221900652BAC /* objcTimerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE640A151D58221900652BAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE640A1F1D58221900652BAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE640A121D58221900652BAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE640A1D1D58221900652BAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE640A271D58221900652BAC /* objcTimerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE640A241D58221900652BAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE640A161D58221900652BAC /* objcTimer */;
+			targetProxy = FE640A231D58221900652BAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FE640A291D58221900652BAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FE640A2A1D58221900652BAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FE640A2C1D58221900652BAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = objcTimer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vilyever.objcTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FE640A2D1D58221900652BAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = objcTimer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vilyever.objcTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FE640A2F1D58221900652BAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = objcTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vilyever.objcTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FE640A301D58221900652BAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = objcTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vilyever.objcTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE640A111D58221900652BAC /* Build configuration list for PBXProject "objcTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE640A291D58221900652BAC /* Debug */,
+				FE640A2A1D58221900652BAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE640A2B1D58221900652BAC /* Build configuration list for PBXNativeTarget "objcTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE640A2C1D58221900652BAC /* Debug */,
+				FE640A2D1D58221900652BAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FE640A2E1D58221900652BAC /* Build configuration list for PBXNativeTarget "objcTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE640A2F1D58221900652BAC /* Debug */,
+				FE640A301D58221900652BAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE640A0E1D58221900652BAC /* Project object */;
+}
